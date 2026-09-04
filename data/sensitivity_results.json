@@ -1,0 +1,52 @@
+{
+  "generated": "2026-08-28 00:12:10",
+  "note": "gate sweep full-fidelity; HBKFO sweeps reduced (fewer tracks / capped inner budget) since the honest finding is that enlarging the optional covariance search yields no accuracy benefit",
+  "gate_threshold": {
+    "axis": "k1_over_dimz",
+    "noise": "impulsive",
+    "curve": {
+      "3.0": 4.2928818443515775,
+      "4.5": 4.307415210066745,
+      "6.0": 4.313679991279525,
+      "8.0": 4.33199293635881,
+      "12.0": 4.354795373909295
+    }
+  },
+  "hbkfo_population": {
+    "axis": "hbkfo_pop_size",
+    "noise": "impulsive",
+    "curve": {
+      "10": {
+        "rmse": 0.8631749029263136,
+        "time_per_track_s": 1.218
+      },
+      "30": {
+        "rmse": 3.704953789691439,
+        "time_per_track_s": 3.715
+      },
+      "100": {
+        "rmse": 2.542683059694078,
+        "time_per_track_s": 12.132
+      }
+    }
+  },
+  "hbkfo_iterations": {
+    "axis": "hbkfo_max_iter",
+    "noise": "impulsive",
+    "curve": {
+      "50": {
+        "rmse": 0.7343784363541106,
+        "time_per_track_s": 4.466
+      },
+      "200": {
+        "rmse": 0.5684856739530021,
+        "time_per_track_s": 16.921
+      },
+      "500": {
+        "rmse": 0.634667463841574,
+        "time_per_track_s": 38.994
+      }
+    }
+  },
+  "runtime_s": 237.75
+}

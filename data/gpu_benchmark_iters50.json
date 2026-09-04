@@ -1,0 +1,25 @@
+{
+  "iters": 50,
+  "lr": 0.001,
+  "n_train": 4757,
+  "n_test": 1020,
+  "results": {
+    "torch": {
+      "time_s": 2.318,
+      "rmse": 0.086,
+      "r2": 0.714,
+      "viol": 0.0,
+      "device": "cuda",
+      "gpu_name": "NVIDIA GeForce RTX 5070 Ti",
+      "gpu_mem_mb": 24.4
+    },
+    "numpy": {
+      "time_s": 160.984,
+      "rmse": 0.2071,
+      "r2": -0.6608,
+      "viol": 0.0,
+      "device": "cpu"
+    }
+  },
+  "speedup_cpu_over_gpu": 69.4495254529767
+}

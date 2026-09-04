@@ -1,0 +1,130 @@
+{
+  "dataset": "MODIS UCSB Emissivity Library",
+  "provider": "Z.-M. Wan Group, ICESS, University of California, Santa Barbara",
+  "url": "https://icess.eri.ucsb.edu/modis/EMIS/html/em.html",
+  "access_date": "2026-08-28",
+  "license": "Publicly distributed for research use (UCSB ICESS)",
+  "spectral_window_um": [
+    8.0,
+    14.0
+  ],
+  "datatype": "Directional hemispherical emissivity (FTIR)",
+  "n_materials": 16,
+  "n_points": 2208,
+  "files_obtained": [
+    "alumdisk.prn",
+    "alumgrte.prn",
+    "disk144.prn",
+    "blkplsttp.prn",
+    "alumsnd1.prn",
+    "alumsnd3.prn",
+    "goldsnd1.prn",
+    "krylon1.prn",
+    "krylon2.prn",
+    "clybrkcm.prn",
+    "rdconbrk.prn",
+    "ustile2p.prn",
+    "beigetle.prn",
+    "masonnat.prn",
+    "asphalt.prn",
+    "flagbuck.prn"
+  ],
+  "per_material_summary": {
+    "Black Painted, Anodized Aluminum Disk": {
+      "emissivity_mean": 0.968,
+      "emissivity_min": 0.9061,
+      "emissivity_max": 0.9948,
+      "n_points": 138
+    },
+    "Black Painted, Anodized Aluminum Grate": {
+      "emissivity_mean": 0.9596,
+      "emissivity_min": 0.8919,
+      "emissivity_max": 0.991,
+      "n_points": 138
+    },
+    "Emissivity of Disk Surface (3.5 inch  1.44mb Floppy Diskette)": {
+      "emissivity_mean": 0.9569,
+      "emissivity_min": 0.9536,
+      "emissivity_max": 0.9684,
+      "n_points": 138
+    },
+    "Emissivity of a Black Plastic Box Top": {
+      "emissivity_mean": 0.9418,
+      "emissivity_min": 0.9324,
+      "emissivity_max": 0.9658,
+      "n_points": 138
+    },
+    "Sample 1 - Aluminum Color Paint on Sandpaper": {
+      "emissivity_mean": 0.3535,
+      "emissivity_min": 0.3449,
+      "emissivity_max": 0.3641,
+      "n_points": 138
+    },
+    "Sample 3 - Aluminum Color Paint on Sandpaper": {
+      "emissivity_mean": 0.3451,
+      "emissivity_min": 0.3353,
+      "emissivity_max": 0.3588,
+      "n_points": 138
+    },
+    "Gold Paint on Sandpaper": {
+      "emissivity_mean": 0.3405,
+      "emissivity_min": 0.3337,
+      "emissivity_max": 0.3491,
+      "n_points": 138
+    },
+    "Sample 1 - Black \"KRYLON\" Painted Sandpaper (Uniform Coverage - Done byManufacturer)": {
+      "emissivity_mean": 0.9605,
+      "emissivity_min": 0.9557,
+      "emissivity_max": 0.9704,
+      "n_points": 138
+    },
+    "Sample 2 - Black \"KRYLON\" Painted Sandpaper (Uniform Coverage - Done by Manufacturer)": {
+      "emissivity_mean": 0.9529,
+      "emissivity_min": 0.9474,
+      "emissivity_max": 0.9667,
+      "n_points": 138
+    },
+    "Clay Brick (Common)": {
+      "emissivity_mean": 0.948,
+      "emissivity_min": 0.8944,
+      "emissivity_max": 0.9828,
+      "n_points": 138
+    },
+    "Red Concrete Brick": {
+      "emissivity_mean": 0.961,
+      "emissivity_min": 0.9184,
+      "emissivity_max": 0.989,
+      "n_points": 138
+    },
+    "U.S. Tile (2pc)": {
+      "emissivity_mean": 0.9447,
+      "emissivity_min": 0.8946,
+      "emissivity_max": 0.9852,
+      "n_points": 138
+    },
+    "Beige Tile 8x8": {
+      "emissivity_mean": 0.8666,
+      "emissivity_min": 0.6909,
+      "emissivity_max": 0.9733,
+      "n_points": 138
+    },
+    "Masonry m.cap-Natural": {
+      "emissivity_mean": 0.9554,
+      "emissivity_min": 0.9061,
+      "emissivity_max": 0.9838,
+      "n_points": 138
+    },
+    "Emissivity of Asphalt": {
+      "emissivity_mean": 0.9714,
+      "emissivity_min": 0.9652,
+      "emissivity_max": 0.9792,
+      "n_points": 138
+    },
+    "Auyona Flagstone - Buckskin Color": {
+      "emissivity_mean": 0.9275,
+      "emissivity_min": 0.8371,
+      "emissivity_max": 0.9835,
+      "n_points": 138
+    }
+  }
+}

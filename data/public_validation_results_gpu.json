@@ -1,0 +1,258 @@
+{
+  "generated": "2026-08-30 17:48:21",
+  "filtering_validation": {
+    "protocol": "KITTI tracking-benchmark geometry, 10 Hz, nonlinear range-bearing-Doppler observation, extreme-noise injection",
+    "n_tracks": 15,
+    "n_steps": 150,
+    "sigma": 0.6,
+    "observation": "nonlinear range-bearing-Doppler (r, az, el, range-rate)",
+    "state_accessor": "get_state().x_hat (combined NS-ARKF estimate)",
+    "table": {
+      "EKF": {
+        "gaussian": 17.464106538400767,
+        "impulsive": 47.02952618250343,
+        "time_varying": 3.640367648305636,
+        "average": 22.71133345640328
+      },
+      "UKF": {
+        "gaussian": 11.128267715472548,
+        "impulsive": 47.72481187724584,
+        "time_varying": 1.093384029785427,
+        "average": 19.982154540834603
+      },
+      "CKF": {
+        "gaussian": 12.128537270835874,
+        "impulsive": 47.54526867895934,
+        "time_varying": 1.45997386848252,
+        "average": 20.377926606092576
+      },
+      "AEKF": {
+        "gaussian": 7.7366632081590065,
+        "impulsive": 6.711430038448398,
+        "time_varying": 1.3524559453366372,
+        "average": 5.266849730648014
+      },
+      "RUKF": {
+        "gaussian": 4.203370367606471,
+        "impulsive": 0.9743375375428455,
+        "time_varying": 1.0914844307296407,
+        "average": 2.089730778626319
+      },
+      "DeepKF": {
+        "gaussian": 17.024761894708096,
+        "impulsive": 48.42825686775625,
+        "time_varying": 3.463662959165214,
+        "average": 22.972227240543187
+      },
+      "PSO-EKF": {
+        "gaussian": 7.56640348702877,
+        "impulsive": 6.634438433404016,
+        "time_varying": 1.3478623081490535,
+        "average": 5.18290140952728
+      },
+      "GA-UKF": {
+        "gaussian": 10.697003808048715,
+        "impulsive": 46.013611149024946,
+        "time_varying": 1.072570241450945,
+        "average": 19.261061732841537
+      },
+      "NS-ARKF": {
+        "gaussian": 3.766873206229067,
+        "impulsive": 0.7917858861771639,
+        "time_varying": 1.967388519599869,
+        "average": 2.1753492040020332
+      }
+    }
+  },
+  "inversion_validation": {
+    "dataset": "MODIS UCSB + SLUM (real LWIR emissivity)",
+    "n_samples": 6796,
+    "n_train": 4757,
+    "n_test": 1020,
+    "backend": "torch",
+    "ssm_pinn_device": "cpu (torch autograd; CUDA unavailable)",
+    "table": {
+      "FC-NN": {
+        "emissivity_rmse": 0.3217,
+        "reflectivity_rmse": 0.4222,
+        "r2": -3.0063,
+        "kirchhoff_violation_rate": 0.9284,
+        "picp": 0.0
+      },
+      "PINN-FC": {
+        "emissivity_rmse": 0.4067,
+        "reflectivity_rmse": 0.3398,
+        "r2": -5.4035,
+        "kirchhoff_violation_rate": 0.1314,
+        "picp": 0.0
+      },
+      "ResNet": {
+        "emissivity_rmse": 0.0965,
+        "reflectivity_rmse": 0.0965,
+        "r2": 0.6396,
+        "kirchhoff_violation_rate": 0.0,
+        "picp": 0.0
+      },
+      "Transformer": {
+        "emissivity_rmse": 0.3658,
+        "reflectivity_rmse": 0.3467,
+        "r2": -4.1808,
+        "kirchhoff_violation_rate": 0.0,
+        "picp": 0.0
+      },
+      "S4-Model": {
+        "emissivity_rmse": 0.3733,
+        "reflectivity_rmse": 0.3557,
+        "r2": -4.396,
+        "kirchhoff_violation_rate": 0.0,
+        "picp": 0.0
+      },
+      "Mamba": {
+        "emissivity_rmse": 0.0958,
+        "reflectivity_rmse": 0.0958,
+        "r2": 0.6446,
+        "kirchhoff_violation_rate": 0.0,
+        "picp": 0.0
+      },
+      "Hard-Constraint PINN": {
+        "emissivity_rmse": 0.4073,
+        "reflectivity_rmse": 0.3378,
+        "r2": -5.4228,
+        "kirchhoff_violation_rate": 0.0,
+        "picp": 0.0
+      },
+      "SSM-PINN": {
+        "emissivity_rmse": 0.0473,
+        "reflectivity_rmse": 0.0491,
+        "r2": 0.9135,
+        "kirchhoff_violation_rate": 0.0,
+        "picp": 1.0
+      }
+    }
+  },
+  "cross_validation": {
+    "measured_emissivity_envelope": [
+      0.136,
+      0.995
+    ],
+    "modis_category_summary": {
+      "Anti-Infrared Coating": {
+        "mean": 0.964,
+        "min": 0.892,
+        "max": 0.995,
+        "n": 276
+      },
+      "Aluminum Alloy": {
+        "mean": 0.552,
+        "min": 0.335,
+        "max": 0.968,
+        "n": 414
+      },
+      "Polyurethane Coating": {
+        "mean": 0.952,
+        "min": 0.932,
+        "max": 0.97,
+        "n": 414
+      },
+      "Anti-Optical Coating": {
+        "mean": 0.34,
+        "min": 0.334,
+        "max": 0.349,
+        "n": 138
+      },
+      "Ceramic Coating": {
+        "mean": 0.939,
+        "min": 0.691,
+        "max": 0.989,
+        "n": 966
+      }
+    },
+    "paper_range_checks": {
+      "Carbon Fiber Composite": {
+        "paper_range": [
+          0.85,
+          0.95
+        ],
+        "within_measured_envelope": true
+      },
+      "High-Hardness Steel": {
+        "paper_range": [
+          0.15,
+          0.45
+        ],
+        "within_measured_envelope": true
+      },
+      "Carburized Aluminum": {
+        "paper_range": [
+          0.1,
+          0.25
+        ],
+        "within_measured_envelope": false
+      },
+      "Aluminum Alloy": {
+        "paper_range": [
+          0.05,
+          0.2
+        ],
+        "within_measured_envelope": false
+      },
+      "Ni-Mo-W Alloy": {
+        "paper_range": [
+          0.25,
+          0.55
+        ],
+        "within_measured_envelope": true
+      },
+      "Corroded Steel": {
+        "paper_range": [
+          0.3,
+          0.85
+        ],
+        "within_measured_envelope": true
+      },
+      "Anti-Optical Coating": {
+        "paper_range": [
+          0.05,
+          0.15
+        ],
+        "within_measured_envelope": false
+      },
+      "Anti-Infrared Coating": {
+        "paper_range": [
+          0.8,
+          0.98
+        ],
+        "within_measured_envelope": true
+      },
+      "Polyurethane Coating": {
+        "paper_range": [
+          0.85,
+          0.95
+        ],
+        "within_measured_envelope": true
+      },
+      "Polyimide Film": {
+        "paper_range": [
+          0.4,
+          0.6
+        ],
+        "within_measured_envelope": true
+      },
+      "Ceramic Coating": {
+        "paper_range": [
+          0.8,
+          0.95
+        ],
+        "within_measured_envelope": true
+      },
+      "Titanium Alloy": {
+        "paper_range": [
+          0.35,
+          0.55
+        ],
+        "within_measured_envelope": true
+      }
+    }
+  },
+  "runtime_s": 59.07
+}

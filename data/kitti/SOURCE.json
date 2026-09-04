@@ -1,0 +1,20 @@
+{
+  "dataset": "KITTI Vision Benchmark Suite (multi-object tracking)",
+  "provider": "Karlsruhe Institute of Technology & Toyota Technological Institute at Chicago",
+  "project_url": "http://www.cvlibs.net/datasets/kitti/",
+  "tracking_url": "http://www.cvlibs.net/datasets/kitti/eval_tracking.php",
+  "citation_key": "geiger2012kitti",
+  "access_date": "2026-08-28",
+  "access_model": "The full raw archive requires an interactive account / e-mail confirmation download and may not be redistributed. This script records provenance and reproduces the KITTI tracking-benchmark MOTION GEOMETRY used by the filtering validation; it does not download or redistribute the raw archive.",
+  "geometry_used": {
+    "description": "Constant-velocity ground-vehicle trajectories matching KITTI tracking motion statistics.",
+    "urban_speed_max_mps": 15.0,
+    "sampling_hz": 10.0,
+    "n_tracks": 15,
+    "n_steps": 150,
+    "seed": 42,
+    "cache": "kitti_geometry_tracks.npz"
+  },
+  "real_labels_parsed": 0,
+  "note": "To validate on the ORIGINAL KITTI tracks, obtain label_02/*.txt via the KITTI account download, place them under kitti/raw/label_02/, and re-run with --parse-labels."
+}
